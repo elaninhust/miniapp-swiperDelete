@@ -96,6 +96,9 @@ Page({
     if (swiperDirection == 2){
       return;
     }   
+    if (swiperDirection == 0){
+      return;
+    }  
     if (ev.changedTouches.length == 1){
       let disX = _this.movedX;
       if(disX < 0){
