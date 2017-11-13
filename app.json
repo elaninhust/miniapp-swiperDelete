@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/shopCar/shopCar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "滑动删除",
+    "navigationBarTextStyle": "black"
+  }
+}

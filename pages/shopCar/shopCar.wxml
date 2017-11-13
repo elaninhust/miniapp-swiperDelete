@@ -1,0 +1,11 @@
+<view>
+  <scroll-view style="height:{{height}}px" scroll-y="{{scrollY}}">
+    <view class="wrap" wx:for="{{shopCarData}}" wx:item="item" wx:index="index" animation="{{item.deleteAnimation}}">
+      <view class="wrap-main" data-id="{{item.content}}{{index}}" animation="{{item.animation}}" data-index="{{index}}" bindtouchstart='touchS' bindtouchmove='touchM' bindtouchend='touchE'> 
+        <image class="wrap-img" src="/static/img/icon.jpg"></image>
+        <view class="wrap-text">{{item.content}}{{index}}</view>
+      </view>
+      <view class="wrap-delete" bindtap="fnDelete" data-index="{{index}}">删除</view>
+    </view>
+  </scroll-view>
+</view>
